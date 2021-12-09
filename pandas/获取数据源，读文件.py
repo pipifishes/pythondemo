@@ -30,7 +30,7 @@ df3 = pd.read_table(r"C:\Users\ext.huaxiang.zhu\PycharmProjects\pythondemo\panda
 print(df3)
 
 # 读取sql文件;只想展示前4行;shape获取数据表的行列数；利用info获取数据类型
-conn = pymysql.connect(host='rm-uf633mxv6kkfa182tdo.mysql.rds.aliyuncs.com', port=3306, user='uaes_admin', passwd='Handhand1', charset='utf8')
+conn = pymysql.connect(host='', port=3306, user='', passwd='', charset='utf8')
 conn.select_db('test3')
 sql = "select * from user;"
 df4 = pd.read_sql(sql,conn)
